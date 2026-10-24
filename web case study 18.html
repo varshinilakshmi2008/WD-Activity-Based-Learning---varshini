@@ -1,0 +1,166 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grand Stay Hotel</title>
+    <link rel="stylesheet" href="web case study 18.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h2>Grand Stay</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#facilities">Facilities</a></li>
+                <li><a href="#booking">Reservation</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to Grand Stay Hotel</h1>
+            <p>Experience comfort, luxury, and unforgettable hospitality.</p>
+            <a href="#booking" class="btn">Book Your Stay</a>
+        </div>
+    </section>
+    <section id="rooms">
+        <h2>Our Rooms</h2>
+
+        <div class="container">
+
+            <div class="room-card">
+                <img
+                    src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?w=700"
+                    alt="Standard hotel room">
+                <div class="room-info">
+                    <h3>Standard Room</h3>
+                    <p>A comfortable room for a relaxing stay.</p>
+                    <p class="price">₹2,000 / night</p>
+                    <p>1 Double Bed | Free Wi-Fi | AC</p>
+                    <a href="#booking" class="btn">Reserve Now</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img
+                    src="https://images.unsplash.com/photo-1590490360182-c33d57733427?w=700"
+                    alt="Deluxe hotel room">
+                <div class="room-info">
+                    <h3>Deluxe Room</h3>
+                    <p>Enjoy extra space and elegant interiors.</p>
+                    <p class="price">₹3,500 / night</p>
+                    <p>King Bed | Wi-Fi | AC | TV</p>
+                    <a href="#booking" class="btn">Reserve Now</a>
+                </div>
+            </div>
+
+            <div class="room-card">
+                <img
+                    src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=700"
+                    alt="Luxury hotel suite">
+                <div class="room-info">
+                    <h3>Luxury Suite</h3>
+                    <p>Experience premium comfort and luxury.</p>
+                    <p class="price">₹6,000 / night</p>
+                    <p>Suite | Wi-Fi | AC | Room Service</p>
+                    <a href="#booking" class="btn">Reserve Now</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="facilities" class="light-bg">
+        <h2>Hotel Facilities</h2>
+
+        <div class="container">
+            <div class="facility-card">
+                <h3>Free Wi-Fi</h3>
+                <p>Stay connected throughout your visit.</p>
+            </div>
+
+            <div class="facility-card">
+                <h3>Restaurant</h3>
+                <p>Enjoy delicious meals and refreshments.</p>
+            </div>
+
+            <div class="facility-card">
+                <h3>Swimming Pool</h3>
+                <p>Relax and enjoy your leisure time.</p>
+            </div>
+
+            <div class="facility-card">
+                <h3>Room Service</h3>
+                <p>Enjoy convenient service in your room.</p>
+            </div>
+        </div>
+    </section>
+    <section id="booking">
+        <h2>Book Your Stay</h2>
+        <p class="section-description">
+            Fill in the details below to request a reservation.
+        </p>
+
+        <form class="booking-form" action="#" method="get">
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name"
+                   placeholder="Enter your full name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email"
+                   placeholder="Enter your email" required>
+
+            <label for="room">Room Category</label>
+            <select id="room" name="room" required>
+                <option value="">Select a room</option>
+                <option value="standard">Standard Room</option>
+                <option value="deluxe">Deluxe Room</option>
+                <option value="suite">Luxury Suite</option>
+            </select>
+
+            <div class="date-row">
+                <div>
+                    <label for="checkin">Check-in Date</label>
+                    <input type="date" id="checkin"
+                           name="checkin" required>
+                </div>
+
+                <div>
+                    <label for="checkout">Check-out Date</label>
+                    <input type="date" id="checkout"
+                           name="checkout" required>
+                </div>
+            </div>
+
+            <label for="guests">Number of Guests</label>
+            <input type="number" id="guests" name="guests"
+                   min="1" max="10" value="1" required>
+
+            <label for="requests">Special Requests</label>
+            <textarea id="requests" name="requests"
+                      rows="4"
+                      placeholder="Any special requirements?"></textarea>
+
+            <button type="submit" class="btn">
+                Submit Reservation
+            </button>
+
+        </form>
+    </section>
+
+    <section id="contact" class="light-bg">
+        <h2>Contact Us</h2>
+        <p>Email: info@grandstay.example</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Address: City Centre, India</p>
+    </section>
+    <footer>
+        <p>&copy; 2026 Grand Stay Hotel. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
